@@ -3,3 +3,145 @@ body {
    font-size: 16px;
    color: #2C2C2C;
 }
+
+
+/**
+  |============================
+  | Мої загальні стилі + header
+  |============================
+*/
+
+/* Зміні */
+:root {
+--main-font: Roboto, sans-serif;
+--bkg-black:#2C2C2C;
+--bkg-light: #FEFEFE;
+--bkg-main: #FFE550;
+--button: #BBF330;
+--dark-green: #7EB101;
+
+--main-txt: #2C2C2C;
+--txt: #3D3D3D;
+--txt-2: #969696;
+--txt-3: #4A4A4A;
+
+--shadow-frut: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+--items: 6;
+--indent: 32px;
+}
+
+
+
+/* Скидання стилів */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ a {
+text-decoration: none;
+font-family: inherit;
+color: inherit;
+cursor: pointer;
+ }
+
+/* Загальні */
+
+ body {
+    background-color: var(--bkg-light);
+    font-family: var(--main-font);
+    font-size: 16px;
+    color: var(--main-txt);
+    line-height: 1.5;
+    
+ }
+
+ .container {
+    width: 1310px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+
+ }
+
+ .img {
+    display: block;
+    max-width: 100%;
+ }
+
+ /* h2 */
+ .section-title {
+    color: var(--main-txt);
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+ }
+ /* h3 */
+ .title {
+color: var(--main-txt);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+ }
+
+ .button {
+    color: var(--main-txt);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    background-color: var(--bkg-light);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+     min-width: 98px;
+    height: 32px;
+    padding: 6px 18px 6px 18px;
+ }
+
+ /**
+   |============================
+   | Header section
+   |============================
+ */
+ .header {
+    display: flex;
+    box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+ }
+
+ .site-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-right: 30px;
+    line-height: 1.14;
+ }
+
+ .link-nav:hover, 
+ .link-nav:focus {
+    color: var(--button);
+ }
+
+ .btn-header {
+        background-color: var(--button);
+    }
+ .btn-header:hover, 
+ .btn-header:focus {
+background-color: var(--bkg-main);
+ }
+
+ .action-nav {
+    display: flex;
+    align-items: center;
+ }
