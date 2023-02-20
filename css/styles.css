@@ -1,5 +1,117 @@
-body {
-   font-family: 'Roboto', sans-serif;
-   font-size: 16px;
-   color: #2C2C2C;
+:root {
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --primary-text-color: #2c2c2c;
+  /* --desc-text-color:  */
+  /* --accent-text-color: ; */
+  /* --footer-text-color: ; */
+  /* --hairlines-color: ; */
+  --white-color: #ffffff;
+  /* --button-hover-color: ; */
+  /* --light-color: ; */
+  /* --distance-1: ; */
+  /* --distance-2:; */
+  /* --distance-3: ; */
 }
+
+/* ==================== Global styles ==================== */
+body {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul,
+ol {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* ==================== /Global styles ==================== */
+
+/* ==================== COMPONENTS ==================== */
+
+/* container */
+
+.container {
+  width: 1250px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* ==================== /COMPONENTS ==================== */
+
+/* ==================== Offerings ==================== */
+
+.offerings-section {
+  display: flex;
+}
+
+.offerings-list {
+  display: flex;
+}
+
+.offerings-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+.offerings-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.offerings-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+.offerings-text-subtitle {
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.offerings-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  background: #ffffff;
+
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+
+  padding: 10px 22px;
+}
+
+/* ==================== /Offerings ==================== */
