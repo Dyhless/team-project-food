@@ -77,8 +77,13 @@ img {
   display: flex;
 }
 
-.offerings-list {
+.item-gen {
   display: flex;
+  gap: 70px;
+}
+
+.offerings-list > .subtitle-item {
+  flex-basis: calc(100% / 2 - 87px);
 }
 
 .offerings-title {
@@ -87,6 +92,7 @@ img {
   line-height: 120%;
 
   margin-bottom: 20px;
+  width: 526px;
 }
 
 .offerings-text {
@@ -95,12 +101,16 @@ img {
   line-height: 150%;
 
   margin-bottom: 35px;
+
+  width: 500px;
 }
 
 .offerings-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 140%;
+
+  margin-bottom: 16px;
 }
 
 .offerings-text-subtitle {
