@@ -82,12 +82,16 @@ img {
   font-weight: 700;
   font-size: 42px;
   line-height: 120%;
+
+  margin-bottom: 20px;
 }
 
 .offerings-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
+
+  margin-bottom: 35px;
 }
 
 .offerings-subtitle {
@@ -99,6 +103,8 @@ img {
 .offerings-text-subtitle {
   font-size: 14px;
   line-height: 150%;
+
+  margin-bottom: 37px;
 }
 
 .offerings-btn {
@@ -112,6 +118,10 @@ img {
   border-radius: 30px;
 
   padding: 10px 22px;
+}
+
+.offerings-right {
+  padding-top: 260px;
 }
 
 /* ==================== /Offerings ==================== */
