@@ -71,6 +71,7 @@ img {
 
 .offerings-img {
   margin-top: 182px;
+  padding-left: 16px;
 }
 
 .offerings-section {
@@ -139,4 +140,33 @@ img {
   margin-left: 157px;
 }
 
-/* ==================== /Offerings ==================== */
+.subtitle-item::before {
+  content: "";
+
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  left: 653px;
+  top: 1006px;
+  margin-bottom: 8px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background: rgb(180, 37, 37);
+}
+
+.subtitle-item.rocket-launch::before {
+  background-image: url(../images/rocket_launch.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subtitle-item.touch-app::before {
+  background-image: url(../images/touch_app.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ==================== /Offerings ==================== */ ;
