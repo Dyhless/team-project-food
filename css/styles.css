@@ -71,11 +71,15 @@ img {
 
 .offerings-img {
   margin-top: 182px;
-  padding-left: 16px;
+  padding-left: 99px;
 }
 
 .offerings-section {
   display: flex;
+
+  background-image: url(../images/Rectangle.png);
+  width: 1250px;
+  height: 824px;
 }
 
 .item-gen {
@@ -84,7 +88,7 @@ img {
 }
 
 .offerings-list > .subtitle-item {
-  flex-basis: calc(100% / 2 - 87px);
+  flex-basis: calc(100% / 2 - 47px);
 }
 
 .offerings-title {
@@ -154,7 +158,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 
-  background: rgb(180, 37, 37);
+  background: rgb(255, 255, 255);
 }
 
 .subtitle-item.rocket-launch::before {
