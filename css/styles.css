@@ -3,25 +3,38 @@ html {
 }
 
 :root {
-   --primary-font: 'Roboto', sans-serif;
-   --secondary-font: 'Raleway', sans-serif;
+   --primary-font: Roboto, sans-serif;
+   --secondary-font: Raleway, sans-serif;
+   --primary-text-color: #2c2c2c;
    --yellow-main-color: #ffe550; 
    --button-green-color: #bbf330;
-   --main-background-color: #FFFFFF;
-   --main-font-color: #2c2c2c;
+   --white-color: #ffffff;
    --secondary-font-color:#969696;
    --tertiary-font: #4A4A4A;
    --dark-green-icon-color: #7EB101;
    --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
    --accent-gradient: linear-gradient(180deg, #FE88B3 0%, #FF4D8D 100%);
    --accent-secondary-gradient: linear-gradient(180deg, #FDFDFD 0%, #FFF5F9 37.3%, #FE88B3 156.25%);
+
+    /* --desc-text-color:  */
+    /* --accent-text-color: ; */
+    /* --footer-text-color: ; */
+    /* --hairlines-color: ; */
+    /* --button-hover-color: ; */
+    /* --light-color: ; */
+    /* --distance-1: ; */
+    /* --distance-2:; */
+    /* --distance-3: ; */
 }
 
+/* ==================== Global styles ==================== */
+
 body {
-   font-family: var(--primary-font);
-   color: var(--main-font-color);
-   font-size: 16px;
-   letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-family: var(--primary-font);
+  letter-spacing: 0.02em;
+  margin: 0;
 }
 
 *,
@@ -34,43 +47,164 @@ h1,
 h2,
 h3,
 h4,
-h6,
+h5,
 h6,
 p {
-   margin: 0;
+  margin: 0;
 }
 
-ul {
-   margin: 0;
-   padding: 0;
-   list-style: none;
-}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  }
 
 img {
-   display: block;
-   max-width: 100%;
-   height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .visually-hidden {
-   position: absolute;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   white-space: nowrap;
-   height: 1px;
-   clip-path: inset(100%);
-   clip: rect(0 0 0 0);
-   width: 1px;
-   overflow: hidden;
+  position: absolute;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  height: 1px;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  width: 1px;
+  overflow: hidden;
+}
+
+/* container */
+
+.container {
+  width: 100vw;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .container {
-   width: 100vw;
-   padding-left: 15px;
-   padding-right: 15px;
+  width: 1248px;
 }
 
-.container {
-   width: 1248px;
+/* ==================== /COMPONENTS ==================== */
+
+/* ==================== Offerings ==================== */
+
+.offerings-img {
+  margin-top: 182px;
+  padding-left: 99px;
 }
+
+.offerings-section {
+  display: flex;
+
+  background-image: url(../images/Rectangle.png);
+  width: 1250px;
+  height: 824px;
+}
+
+.item-gen {
+  display: flex;
+  gap: 70px;
+}
+
+.offerings-list>.subtitle-item {
+  flex-basis: calc(100% / 2 - 47px);
+}
+
+.offerings-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+
+  margin-bottom: 20px;
+  width: 526px;
+}
+
+.offerings-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  margin-bottom: 35px;
+
+  width: 500px;
+}
+
+.offerings-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+
+  margin-bottom: 16px;
+}
+
+.offerings-text-subtitle {
+  font-size: 14px;
+  line-height: 150%;
+
+  margin-bottom: 37px;
+}
+
+.offerings-btn {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+
+  background: #ffffff;
+
+  border: 2px solid #7eb101;
+  border-radius: 30px;
+
+  padding: 10px 22px;
+}
+
+.offerings-right {
+  padding-top: 260px;
+
+  margin-left: 157px;
+}
+
+.subtitle-item::before {
+  content: "";
+
+  display: block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  left: 653px;
+  top: 1006px;
+  margin-bottom: 8px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background: rgb(255, 255, 255);
+}
+
+.subtitle-item.rocket-launch::before {
+  background-image: url(../images/rocket_launch.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.subtitle-item.touch-app::before {
+  background-image: url(../images/touch_app.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* ==================== /Offerings ==================== */
