@@ -183,15 +183,17 @@ img {
 
 /* ==================== Offerings ==================== */
 
+
 .offerings-img {
   margin-top: 182px;
   padding-left: 99px;
 }
 
+
 .offerings-section {
   display: flex;
   background-image: url(../images/Rectangle.png);
-  width: 1250px;
+  width: 100%;
   height: 824px;
 }
 
