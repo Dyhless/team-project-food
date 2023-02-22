@@ -1,5 +1,76 @@
+html {
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-font: 'Roboto', sans-serif;
+   --secondary-font: 'Raleway', sans-serif;
+   --yellow-main-color: #ffe550; 
+   --button-green-color: #bbf330;
+   --main-background-color: #FFFFFF;
+   --main-font-color: #2c2c2c;
+   --secondary-font-color:#969696;
+   --tertiary-font: #4A4A4A;
+   --dark-green-icon-color: #7EB101;
+   --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+   --accent-gradient: linear-gradient(180deg, #FE88B3 0%, #FF4D8D 100%);
+   --accent-secondary-gradient: linear-gradient(180deg, #FDFDFD 0%, #FFF5F9 37.3%, #FE88B3 156.25%);
+}
+
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: var(--primary-font);
+   color: var(--main-font-color);
    font-size: 16px;
-   color: #2C2C2C;
+   letter-spacing: 0.02em;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+h6,
+p {
+   margin: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+.visually-hidden {
+   position: absolute;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   height: 1px;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   width: 1px;
+   overflow: hidden;
+}
+
+.container {
+   width: 100vw;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.container {
+   width: 1248px;
 }
