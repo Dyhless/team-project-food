@@ -175,6 +175,13 @@ img {
    line-height: 1.14;
 }
 
+.link-nav {
+   text-decoration: none;
+   font-family: inherit;
+   color: inherit;
+   cursor: pointer;
+}
+
 .link-nav:hover,
 .link-nav:focus {
    color: var(--button-green-color);
