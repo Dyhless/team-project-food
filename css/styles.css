@@ -1,30 +1,39 @@
 html {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-   --primary-font: Roboto, sans-serif;
-   --secondary-font: Raleway, sans-serif;
-   --primary-text-color: #2c2c2c;
-   --yellow-main-color: #ffe550; 
-   --button-green-color: #bbf330;
-   --white-color: #ffffff;
-   --secondary-font-color:#969696;
-   --tertiary-font: #4A4A4A;
-   --dark-green-icon-color: #7EB101;
-   --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
-   --accent-gradient: linear-gradient(180deg, #FE88B3 0%, #FF4D8D 100%);
-   --accent-secondary-gradient: linear-gradient(180deg, #FDFDFD 0%, #FFF5F9 37.3%, #FE88B3 156.25%);
+  --primary-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
+  --primary-text-color: #2c2c2c;
+  --yellow-main-color: #ffe550;
+  --button-green-color: #bbf330;
+  --white-color: #ffffff;
+  --secondary-font-color: #969696;
+  --tertiary-font: #4a4a4a;
+  --dark-green-icon-color: #7eb101;
+  --shadow-fruit: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  --accent-gradient: linear-gradient(180deg, #fe88b3 0%, #ff4d8d 100%);
+  --accent-secondary-gradient: linear-gradient(
+    180deg,
+    #fdfdfd 0%,
+    #fff5f9 37.3%,
+    #fe88b3 156.25%
+  );
 
-    /* --desc-text-color:  */
-    /* --accent-text-color: ; */
-    /* --footer-text-color: ; */
-    /* --hairlines-color: ; */
-    /* --button-hover-color: ; */
-    /* --light-color: ; */
-    /* --distance-1: ; */
-    /* --distance-2:; */
-    /* --distance-3: ; */
+  /* --desc-text-color:  */
+  /* --accent-text-color: ; */
+  /* --footer-text-color: ; */
+  /* --hairlines-color: ; */
+  /* --button-hover-color: ; */
+  /* --light-color: ; */
+  /* --distance-1: ; */
+  /* --distance-2:; */
+  /* --distance-3: ; */
 }
 
 /* ==================== Global styles ==================== */
@@ -40,7 +49,7 @@ body {
 *,
 *::before,
 *::after {
-   box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 button {
@@ -192,7 +201,9 @@ img {
 
 .offerings-img {
   margin-top: 182px;
-  padding-left: 99px;
+  margin-left: 99px;
+  width: 396px;
+  height: 502px;
 }
 
 
@@ -208,7 +219,7 @@ img {
   gap: 70px;
 }
 
-.offerings-list>.subtitle-item {
+.offerings-list > .subtitle-item {
   flex-basis: calc(100% / 2 - 47px);
 }
 
