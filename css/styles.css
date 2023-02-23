@@ -103,14 +103,20 @@ img {
 
 .container {
   width: 100vw;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.container {
+
+/* не правильне значення!*/
+/* .container {
   width: 1248px;
+} */
+
+.container {
+   width: 1280px;
 }
 
 /* h2 */
@@ -288,6 +294,71 @@ img {
   background-position: center;
 }
 /* ==================== Offerings ==================== */
+
+
+/* ==================== Favorites ==================== */
+.section.favorites{
+   text-align: center;
+}
+
+.secondary.button{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+   padding: 10px 22px;
+
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 1.5;
+
+   background: var(--white-color);
+border: 2px solid var(--dark-green-icon-color);
+border-radius: 30px;
+}
+
+.secondary.button:hover,
+.secondary.button:focus{
+   border-color: transparent;
+   background-color: var(--button-green-color);
+}
+
+.title.favorites{
+   margin-bottom: 20px;
+}
+
+.fav-text{
+ margin-bottom: 40px;
+}
+
+.fav.list{
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: -32px;
+   margin-left: -32px;
+}
+
+.fav-item{
+   width: calc(100% / 3 - 32px);
+   margin-left: 32px;
+   margin-top: 32px;
+   height: 397px;
+    cursor: pointer;
+}
+
+.border-fav{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   border: 16px solid var(--yellow-main-color);
+border-radius: 50%;
+}
+
+.border-fav:active{
+   border-color: var(--button-green-color);
+}
+
 
 /* ==================== Customer Say ====================*/
 
