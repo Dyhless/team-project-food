@@ -29,7 +29,7 @@ body {
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
-  outline: 2px solid rgb(248, 176, 19);
+  /* outline: 2px solid rgb(248, 176, 19); */
 }
 
 /*768px*/
@@ -42,7 +42,7 @@ body {
     padding-right: 32px;
     margin-right: auto;
     margin-left: auto;
-    outline: 2px solid rgb(6, 221, 52);
+    /* outline: 2px solid rgb(6, 221, 52); */
   }
 }
 
@@ -55,7 +55,7 @@ body {
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
   }
 }
 
@@ -80,7 +80,7 @@ body {
     flex-direction: row;
     padding-top: 60px;
     padding-bottom: 0px;
-    outline: 2px solid rgb(58, 16, 209);
+    /* outline: 2px solid rgb(58, 16, 209); */
     background-color: var(--primary-bcg);
   }
 }
@@ -218,7 +218,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
   }
 }
 
@@ -247,7 +247,7 @@ screen and (min-resolution: 2dppx) {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    outline: 2px solid rgb(37, 201, 32);
+    /* outline: 2px solid rgb(37, 201, 32); */
   }
 }
 
