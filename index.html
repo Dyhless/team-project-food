@@ -4,24 +4,188 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>FoodSta</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- Header / Inna -->
-    <!-- Hero / Evgenia -->
-    <!-- Offerings / Sergii -->
-    <!-- Favorites Dan -->
-    <!-- Customers Say Ania-->
-    <!-- Subscribe Sasha-->
-    <!-- Footer Evgen -->
+    <!-- ========== Header / Inna =========-->
+    <header>
+      <div class="container header">
+        <a href="./"><img src="./images/vector.png" alt="logo" /></a>
+        <div class="action-nav">
+          <nav>
+            <ul class="site-nav">
+              <li><a class="link-nav" href="#">Home</a></li>
+              <li><a class="link-nav" href="#About">About</a></li>
+              <li><a class="link-nav" href="#Service">Service</a></li>
+              <li><a class="link-nav" href="#Menu">Menu</a></li>
+              <li><a class="link-nav" href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <button class="button btn-header" type="button">Order Now</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ========== Hero / Evgenia =========-->
+
+      <!-- ========== Offerings / Sergii =========-->
+      <section class="offerings-section container">
+        <img
+          class="offerings-img"
+          src="./images/aple.png"
+          alt="Apple"
+          width="396"
+          height="502"
+        />
+        <div class="offerings-right">
+          <h2 class="offerings-title">What’s Special About Our Offerings</h2>
+          <p class="offerings-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique. Duis cursus, mi quis
+            viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+            vitae erat.
+          </p>
+          <ul class="offerings-list list item-gen">
+            <li class="subtitle-item rocket-launch">
+              <h3 class="offerings-subtitle">Fasest Delivery</h3>
+              <p class="offerings-text-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </p>
+            </li>
+            <li class="subtitle-item touch-app">
+              <h3 class="offerings-subtitle">Easy To Order</h3>
+              <p class="offerings-text-subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Suspendisse varius enim in eros.
+              </p>
+            </li>
+          </ul>
+          <button class="offerings-btn" data-modal-open type="button">
+            Order Now
+          </button>
+        </div>
+      </section>
+
+      <!-- ========== Favorites Dan =========-->
+      <section class="section favorites">
+        <div class="container">
+          <!-- <button class="secondary button">Order Now</button> -->
+          <h2 class="title favorites">Some of Our Favorites</h2>
+          <p class="fav-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <ul class="fav list">
+            <li class="fav-item border-fav">
+              <a href=""
+                ><img src="./images/gamburger.png" alt width="315" height="315"
+              /></a>
+            </li>
+            <li class="fav-item border-fav">
+              <a href=""
+                ><img src="./images/pasta.png" alt width="315" height="315"
+              /></a>
+            </li>
+            <li class="fav-item border-fav">
+              <a href=""
+                ><img src="./images/pizza.png" alt width="315" height="315"
+              /></a>
+            </li>
+            <li class="fav-item border-fav">
+              <a href=""
+                ><img src="./images/chicken.png" alt width="315" height="315"
+              /></a>
+            </li>
+            <li class="fav-item border-fav">
+              <a href="">
+                <img src="./images/salat.png" alt width="315" height="315"
+              /></a>
+            </li>
+            <li class="fav-item border-fav">
+              <a href=""
+                ><img src="./images/borshch.png" alt width="315" height="315"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== Customers Say Ania =========-->
+      <section class="feedback-section">
+        <div class="container">
+          <h2 class="title">What our Customers Say</h2>
+          <p class="section-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <ul class="feedback-list list">
+            <li class="feedback-item">
+              <svg class="icon-stars" width="101" height="16">
+                <use href="./images/customer-say/icons.svg#icon-stars"></use>
+              </svg>
+              <p class="coment">
+                "The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a freind, No
+                questions asked"
+              </p>
+              <div class="avatar-block">
+                <img
+                  class="avatar-img"
+                  src="./images/customer-say/man-avatar.png"
+                  alt="avatar"
+                  width="48"
+                  height="48"
+                />
+                <div class="avatar-text-part">
+                  <h3 class="subtitle">Sumith Shah</h3>
+                  <p class="ava-text">Some Dude</p>
+                </div>
+              </div>
+            </li>
+            <li class="feedback-item">
+              <svg class="icon-stars" width="101" height="16">
+                <use href="./images/customer-say/icons.svg#icon-stars"></use>
+              </svg>
+              <div>
+                <p class="coment">
+                  "The ease with which I can just go in and order what i want
+                  was amazing, It has been a very pleasant experience ordering
+                  from this app"
+                </p>
+                <div class="avatar-block">
+                  <img
+                    class="avatar-img"
+                    src="./images/customer-say/woman-avatar.png"
+                    alt="avatar"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="avatar-text-part">
+                    <h3 class="subtitle">Sumith Shah</h3>
+                    <p class="ava-text">Some Dude</p>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== Subscribe Sasha =========-->
+    </main>
+
+    <!-- ========== Footer Evgen =========-->
+
     <footer>
       <ul>
         <li><a href="">Home</a></li>
@@ -31,8 +195,8 @@
         <li><a href="">Contact</a></li>
       </ul>
     </footer>
-    <!-- Modal Hero / Vova -->
 
+    <!-- ========== Modal Hero / Vova =========-->
     <!-- Для відкриття модального вікна потрібно добавити data-modal-open в тег <button>Order Service -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-hero">
@@ -78,7 +242,8 @@
         </form>
       </div>
     </div>
-    <!-- Offering / Tania -->
+
+    <!-- ========== Offering / Tania =========-->
   </body>
   <script src="./js/modal.js"></script>
 </html>
