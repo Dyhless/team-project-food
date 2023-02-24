@@ -1,6 +1,5 @@
 :root {
   --primary-font: Roboto, sans-serif;
-  --primary-bcg: #F5F5F5;
   --button-green-color: #BBF330;
   --button-green-color-hov: #FFE450;
   --border-prim-btn: #BBF330;
@@ -69,7 +68,6 @@ body {
   padding-top: 60px;
   padding-bottom: 50px;
   /* outline: 2px solid green;*/
-  background-color: var(--primary-bcg);
 }
 
 
@@ -81,7 +79,6 @@ body {
     padding-top: 60px;
     padding-bottom: 0px;
     /* outline: 2px solid rgb(58, 16, 209); */
-    background-color: var(--primary-bcg);
   }
 }
 
@@ -100,7 +97,6 @@ body {
     padding-top: 14px;
     padding-bottom: 14px;
     /* outline: 2px solid green;*/
-    background-color: var(--primary-bcg); 
   }
 }
 
