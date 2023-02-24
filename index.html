@@ -268,6 +268,51 @@
     </footer>
 
     <!-- ========== Modal Hero / Vova =========-->
+    <!-- Для відкриття модального вікна потрібно добавити data-modal-open в тег <button>Order Service -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-hero">
+        <button class="modal-hero-close-button" data-modal-close>
+          <svg class="modal-hero-close-icon" width="10" height="10">
+            <use href="./images/icons/symbol-defs.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <p>Order Form</p>
+        <form class="modal-hero-form">
+          <label for="name" class="modal-hero-form-desc">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="user_name"
+            class="modal-hero-form-input"
+            placeholder="Your name"
+            required
+            minlength="3"
+            maxlength="25"
+            title="&#9888;
+ The name must be between 3 and 25 characters"
+          />
+          <label for="phone" class="modal-hero-form-desc">Phone number</label>
+          <input
+            type="tel"
+            name="user_phone"
+            id="phone"
+            class="modal-hero-form-input"
+            placeholder="+38(0_ _) _ _ _   _ _   _ _"
+            required
+          />
+          <label for="email" class="modal-hero-form-desc">E-mail</label>
+          <input
+            type="email"
+            name="user_email"
+            id="email"
+            class="modal-hero-form-input"
+            placeholder="example@gmail.com"
+            required
+          />
+          <button type="submit" class="modal-hero-form-submit">Send</button>
+        </form>
+      </div>
+    </div>
 
     <!-- ========== Offering / Tania =========-->
 
@@ -285,4 +330,5 @@
     ></script>
     <script src="./js/slider.js"></script>
   </body>
+  <script src="./js/modal.js"></script>
 </html>

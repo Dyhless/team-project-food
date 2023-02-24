@@ -929,3 +929,140 @@ border-radius: 50%;
    transform: rotate(90deg);
 }
 /* ============ Customer Say ==========*/
+
+/* ============ Modal hero ==========*/
+
+.backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: inherit;
+
+   width: 100%;
+   height: 720px;
+   background-color: rgba(94, 99, 99, 0.7);
+   transition-property: opacity, visibility;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-hero {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 458px;
+   transform: translate(-50%, -50%);
+   padding: 32px;
+
+   background-color: #ffe550;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+   border-radius: 30px;
+}
+
+.modal-hero-close-button {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+   transition: transform 0.25s, box-shadow;
+
+   /* Нижче код для обнуляції */
+   line-height: inherit;
+   cursor: pointer;
+   border: 0;
+}
+
+.modal-hero-close-button:hover {
+   transform: rotate(270deg);
+   box-shadow: none;
+}
+
+.modal-hero p {
+   text-align: center;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 120%;
+   color: #2c2c2c;
+   padding-bottom: 20px;
+
+   /* Нижче код для обнуляції */
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.modal-hero-form {
+   display: flex;
+   flex-direction: column;
+}
+
+.modal-hero-form-desc {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 140%;
+   color: #2c2c2c;
+   margin-left: 12px;
+   margin-bottom: 4px;
+}
+
+.modal-hero-form-input {
+   height: 48px;
+   background-color: #ffffff;
+   border: 1px solid rgba(18, 18, 18, 0.12);
+   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 30px;
+   padding-left: 12px;
+   margin-bottom: 24px;
+   outline: none;
+   font-size: 16px;
+   line-height: 1.25;
+}
+
+.modal-hero-form-input::placeholder {
+   font-size: 16px;
+   line-height: 20px;
+   color: #c4c4c4;
+}
+
+.modal-hero-form-input:focus {
+   border: 1px solid #7eb101;
+}
+
+.modal-hero-form-submit {
+   align-self: center;
+   margin-top: 32px;
+   width: 106px;
+   height: 40px;
+   background: #ffffff;
+   border: 2px solid #7eb101;
+   border-radius: 30px;
+
+   font-weight: 500;
+   font-size: 13px;
+   line-height: 150%;
+   color: #2c2c2c;
+
+   transition-property: color, background-color, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   /* Для обнуляції */
+   cursor: pointer;
+}
+
+.modal-hero-form-submit:hover,
+.modal-hero-form-submit:checked {
+   background-color: #bbf330;
+}
+
+.modal-hero-form-input#email {
+   margin-bottom: 0;
+}
+/* ============ Modal hero ==========*/
