@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- Header / Inna -->
-    <!-- Hero / Evgenia -->
-    <!-- Offerings / Sergii -->
-    <!-- Favorites Dan -->
-    <!-- Customers Say Ania-->
-    <!-- Subscribe Sasha-->
-    <!-- Footer Evgen -->
-    <!-- Modal Hero / Vova -->
-    <!-- Offering / Tania -->
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width= , initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="./flex.css" />
+</head>
+
+<body>
+  <!-- Header / Inna -->
+
+  <!-- Hero / Evgenia -->
+  <section class="container hero">
+    <div class="hero-list">
+      <h1 class="hero-text">Enjoy Your Favorite Food From Anywhere</h1>
+      <p class="hero-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+        eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
+        vitae erat.</p>
+      <button class="primary-btn" type="button">Order Now</button>
+    </div>
+
+    <div class="slider myslyder">
+      <div class="slider__item">
+        <img srcset="./images/hero/Foto_desk@1x.png 1x, ./images/Foto_desk@2x.png 2x" class="hero-image"
+          src="./images/hero/Foto_desk@1x.png" alt="Food" width="528" height="528">
+          <!-- <img srcset="./images/hero/Foto292.png 292w, ./images/Foto528.png 528w"
+           class="hero-image"
+           sizes="(min-width: 1280px) 528px, (min-width: 768px) 292px"
+          src="./images/hero/Foto528.png" alt="Food"> -->
+      </div>
+      <div class="slider__item">
+        <img srcset="./images/hero/pngwing_desk@1x.png 1x, ./images/pngwing_desk@2x.png 2x" class="hero-image"
+          src="./images/hero/pngwing_desk@1x.png" alt="Food" width="528" height="528">
+      </div>
+      <div class="slider__item">
+        <img srcset="./images/hero/chrisralston_desk@1x.png 1x, ./images/chrisralston_desk@2x.png 2x" class="hero-image"
+          src="./images/hero/chrisralston_desk@1x.png" alt="Food" width="528" height="528">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Offerings / Sergii -->
+  <!-- Favorites Dan -->
+  <!-- Customers Say Ania-->
+  <!-- Subscribe Sasha-->
+  <!-- Footer Evgen -->
+  <!-- Modal Hero / Vova -->
+  <!-- Offering / Tania -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+
 </html>
