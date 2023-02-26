@@ -15,8 +15,7 @@ html {
   --shadow-fruit: radial-gradient(
     50% 50% at 50% 50%,
     #2f583f 0%,
-    rgba(105, 105, 105, 0) 100%
-  );
+    rgba(105, 105, 105, 0) 100%);
   --accent-gradient: linear-gradient(180deg, #fe88b3 0%, #ff4d8d 100%);
   --accent-secondary-gradient: linear-gradient(
     180deg,
@@ -24,16 +23,6 @@ html {
     #fff5f9 37.3%,
     #fe88b3 156.25%
   );
-
-  /* --desc-text-color:  */
-  /* --accent-text-color: ; */
-  /* --footer-text-color: ; */
-  /* --hairlines-color: ; */
-  /* --button-hover-color: ; */
-  /* --light-color: ; */
-  /* --distance-1: ; */
-  /* --distance-2:; */
-  /* --distance-3: ; */
 }
 
 /* ==================== Global styles ==================== */
@@ -113,9 +102,6 @@ img {
    width: 1280px;
 }
 
-/* Може, перенести сюди медіа-запити на контейнер? */
-
-
 /* h2 */
 .section-title {
    color: var(--primary-text-color);
@@ -148,11 +134,8 @@ img {
    padding: 6px 18px 6px 18px;
 }
 
-/**
-   |============================
-   | Header section
-   |============================
- */
+ /* ==================== Header section / Start ==================== */
+
 @media screen and (min-width: 480px) {
    .container {
       max-width: 320px;
@@ -175,7 +158,7 @@ img {
       max-width: 1280px;
       padding-right: 16px;
       padding-left: 16px;
-      }
+   }
 }
 
 .header {
@@ -215,7 +198,14 @@ padding: 10px 0px;
    background-color: var(--yellow-main-color);
 }
 
-/* Mobile menu-burger */
+ /* ==================== Header section / Finish ==================== */
+
+/* ==================== Mobile menu-burger / Start ==================== */
+
+@media screen and (max-width: 479px) {
+   .mobile-menu {
+      display: none;
+}
 
 .mobile-menu {
   display: flex;
@@ -223,18 +213,14 @@ padding: 10px 0px;
   align-items: center;
   min-width: 28px;
   min-height: 28px;
-
   margin: 0;
   margin-left: auto;
   padding: 0;
   border: none;
-
   background-color: transparent;
-
   outline: none;
   cursor: pointer;
 }
-
 
 @media screen and (max-width: 767px) {
    .action-nav {
@@ -243,11 +229,12 @@ padding: 10px 0px;
 }
 
 @media screen and (min-width: 768px) {
-   .action-nav{
+   .action-nav {
       display: flex;
       align-items: center;
       margin-left: auto;
    }
+}
 
 .site-nav {
    display: flex;
@@ -258,15 +245,9 @@ padding: 10px 0px;
    line-height: 1.14;
 }
 
-.mobile-menu {
-   display: none;
-}
+/* ==================== Mobile menu-burger / Finish ==================== */
 
-/**
-  |============================
-  | HERO
-  |============================
-*/
+/* ==================== Hero / Start ==================== */
 
 /*480px*/
 .container {
@@ -277,7 +258,6 @@ padding: 10px 0px;
   padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 2px solid rgb(248, 176, 19); */
 }
 
 /*768px*/
@@ -290,7 +270,6 @@ padding: 10px 0px;
     padding-right: 32px;
     margin-right: auto;
     margin-left: auto;
-    /* outline: 2px solid rgb(6, 221, 52); */
   }
 }
 
@@ -303,22 +282,15 @@ padding: 10px 0px;
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
-    /* outline: 2px solid red; */
   }
 }
 
 /*480px*/
 .hero {
   display: block;
-  /* flex-direction: row;
-  flex-wrap: nowrap; */
-  /* align-items: space-between;
-  justify-content: space-between; */
   padding-top: 60px;
   padding-bottom: 50px;
-  /* outline: 2px solid green;*/
 }
-
 
 /* 768px*/
 @media screen and (min-width: 768px) {
@@ -327,7 +299,6 @@ padding: 10px 0px;
     flex-direction: row;
     padding-top: 60px;
     padding-bottom: 0px;
-    /* outline: 2px solid rgb(58, 16, 209); */
   }
 }
 
@@ -345,7 +316,6 @@ padding: 10px 0px;
     justify-content: space-between;
     padding-top: 14px;
     padding-bottom: 14px;
-    /* outline: 2px solid green;*/
   }
 }
 
@@ -407,7 +377,6 @@ padding: 10px 0px;
   }
 }
 
-
 /*1280*/
 @media screen and (min-width: 1280px) {
   .hero-p {
@@ -437,20 +406,6 @@ padding: 10px 0px;
   background-color: var(--yellow-main-color);
 }
 
-/*480px*/
-/* .myslyder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 608px;
-  height: 580px;
-  background-image: url(../images/hero/Ellipse.png);
-  /* background-size: cover; 
-  background-repeat: no-repeat;
-  background-position: center;
-  outline: 2px solid red;
-} */
-
 /*768px*/
 @media screen and (min-width: 768px) {
   .myslyder {
@@ -463,7 +418,6 @@ padding: 10px 0px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* outline: 2px solid red; */
   }
 }
 
@@ -492,7 +446,6 @@ screen and (min-resolution: 2dppx) {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    /* outline: 2px solid rgb(37, 201, 32); */
   }
 }
 
@@ -523,14 +476,9 @@ screen and (min-resolution: 2dppx) {
   overflow: hidden;
 }
 
-/* .slick-track {
-  display: flex;
-  align-items: flex-end;
-} */
 
 .slider__item {
   padding: 30px 15px;
-  /* outline: 3px solid black; */
 }
 
 .slider__item img {
@@ -540,14 +488,8 @@ screen and (min-resolution: 2dppx) {
 .slider {
   position: relative;
   padding: 0px 60px;
-  /* outline: 2px solid blue; */
 }
 
-/* @media (max-width: 767px) {
-  .slider {
-    padding: 0px 40px;
-  }
-} */
 
 .slider .slick-arrow {
   position: absolute;
@@ -563,16 +505,6 @@ screen and (min-resolution: 2dppx) {
   left: 10px;
   background: url('../images/hero/arrowleft.png') 0 0 / 100% no-repeat;
 }
-
-/* .slider .slick-arrow.slick-prev:hover, */
-/* .slider .slick-arrow.slick-prev:focus {
-  color: green;
-}
-
-.slick-prev:focus {
-  color: green;
-} */
-
 
 .slider .slick-arrow.slick-next {
   right: 10px;
@@ -590,16 +522,9 @@ screen and (min-resolution: 2dppx) {
   }
 }
 
-/**
-  |============================
-  | HERO
-  |============================
-*/
+/* ==================== Hero / Finish ==================== */
 
-/* ==================== /COMPONENTS ==================== */
-
-/* ==================== Offerings ==================== */
-
+/* ==================== Offerings / Start ==================== */
 
 .offerings-img {
   margin-top: 182px;
@@ -607,7 +532,6 @@ screen and (min-resolution: 2dppx) {
   width: 396px;
   height: 502px;
 }
-
 
 .offerings-section {
   display: flex;
@@ -700,9 +624,9 @@ screen and (min-resolution: 2dppx) {
   background-repeat: no-repeat;
   background-position: center;
 } 
-/* ==================== Offerings ==================== */
+/* ==================== Offerings / Finnish ==================== */
 
-/* ==================== Favorites ==================== */
+/* ==================== Favorites / Start ==================== */
 .section.favorites{
    text-align: center;
    padding: 100px 0;
@@ -766,7 +690,9 @@ screen and (min-resolution: 2dppx) {
    border-color: var(--button-green-color);
 }
 
-/* ==================== Customer Say ====================*/
+/* ==================== Favorites / Finish ==================== */
+
+/* ==================== Customer Say / Start ====================*/
 
 @media screen and (max-width: 480px) {
    .container {
@@ -990,9 +916,9 @@ screen and (min-resolution: 2dppx) {
    border: 0.854167px solid var(--dark-green-icon-color);
    transform: rotate(90deg);
 }
-/* ============ Customer Say ==========*/
+/* ============ Customer Say / Finish ==========*/
 
-/* ============ Modal hero ==========*/
+/* ============ Modal hero / Start ==========*/
 
 .backdrop {
    position: fixed;
@@ -1138,4 +1064,4 @@ screen and (min-resolution: 2dppx) {
 .modal-hero-form-input#email {
    margin-bottom: 0;
 }
-/* ============ Modal hero ==========*/
+/* ============ Modal Hero Finish ==========*/
