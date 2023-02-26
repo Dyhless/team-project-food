@@ -110,11 +110,6 @@ img {
 }
 
 
-/* не правильне значення!*/
-/* .container {
-  width: 1248px;
-} */
-
 .container {
    width: 1280px;
 }
@@ -200,6 +195,343 @@ img {
    align-items: center;
 }
 
+
+/**
+  |============================
+  | HERO
+  |============================
+*/
+
+/*480px*/
+.container {
+  width: 100vw;
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  /* outline: 2px solid rgb(248, 176, 19); */
+}
+
+/*768px*/
+@media screen and (min-width: 768px) {
+  .container {
+    width: 100vw;
+    min-width: 736px;
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: auto;
+    margin-left: auto;
+    /* outline: 2px solid rgb(6, 221, 52); */
+  }
+}
+
+/*1280px*/
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 100vw;
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    /* outline: 2px solid red; */
+  }
+}
+
+/*480px*/
+.hero {
+  display: block;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  /* align-items: space-between;
+  justify-content: space-between; */
+  padding-top: 60px;
+  padding-bottom: 50px;
+  /* outline: 2px solid green;*/
+}
+
+
+/* 768px*/
+@media screen and (min-width: 768px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    /* outline: 2px solid rgb(58, 16, 209); */
+  }
+}
+
+
+/* 1280px*/
+@media screen and (min-width: 1280px) {
+  .hero {
+    min-width: 1280px;
+    max-width: 1440px;
+    height: 608px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: space-between;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    /* outline: 2px solid green;*/
+  }
+}
+
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* H1 */
+/*480*/
+.hero-text {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  width: 280px;
+  margin-top: 0px;
+  margin-bottom: 28px;
+}
+
+/*768*/
+@media screen and (min-width: 768px) {
+  .hero-text {
+    font-size: 42px;
+    line-height: 1.2;
+    width: 537px;
+    margin-top: 0px;
+    margin-bottom: 44px;
+  }
+}
+
+/*1280*/
+@media screen and (min-width: 1280px) {
+  .hero-text {
+    font-size: 48px;
+    width: 502px;
+    margin-top: 159px;
+    margin-bottom: 28px;
+  }
+}
+
+/*480*/
+.hero-p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  /* width: 266px; */
+  margin-bottom: 28px;
+}
+
+/*768*/
+@media screen and (min-width: 768px) {
+  .hero-p {
+    font-size: 16px;
+    line-height: 1.5;
+    width: 336px;
+    margin-bottom: 40px;
+  }
+}
+
+
+/*1280*/
+@media screen and (min-width: 1280px) {
+  .hero-p {
+    width: 502px;
+    margin-bottom: 40px;
+  }
+}
+
+/*Primary button*/
+.primary-btn {
+  color: var(--primary-text-color);
+  background-color: var(--button-green-color);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 6px 18px;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  border-radius: 30px;
+  border: transparent;
+  align-items: center;
+}
+
+.primary-btn:hover,
+.primary-btn:focus,
+.primary-btn:active {
+  background-color: var(--yellow-main-color);
+}
+
+/*480px*/
+/* .myslyder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 608px;
+  height: 580px;
+  background-image: url(../images/hero/Ellipse.png);
+  /* background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: 2px solid red;
+} */
+
+/*768px*/
+@media screen and (min-width: 768px) {
+  .myslyder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 336px;
+    height: 320px;
+    background-image: url(../images/hero/Ellipse_tab@1x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* outline: 2px solid red; */
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (webkit-min-device-pixel-retio: 2),
+screen and (o-min-device-pixel-retio: 2/1),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/Ellipse_tab@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/*1280px*/
+@media screen and (min-width: 1280px) {
+  .myslyder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 608px;
+    height: 580px;
+    background-image: url(../images/hero/Ellipse__desk@1x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* outline: 2px solid rgb(37, 201, 32); */
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (webkit-min-device-pixel-retio: 2),
+screen and (o-min-device-pixel-retio: 2/1),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/hero/Ellipse_desk@2x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+/* Стилизация стрелок */
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-slider {
+  min-width: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+/* .slick-track {
+  display: flex;
+  align-items: flex-end;
+} */
+
+.slider__item {
+  padding: 30px 15px;
+  /* outline: 3px solid black; */
+}
+
+.slider__item img {
+  max-width: 100%;
+}
+
+
+
+.slider {
+  position: relative;
+  padding: 0px 60px;
+  /* outline: 2px solid blue; */
+}
+
+/* @media (max-width: 767px) {
+  .slider {
+    padding: 0px 40px;
+  }
+} */
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 55%;
+  margin: -20px 0px 0px 0px;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 48px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 10px;
+  background: url('../images/hero/arrowleft.png') 0 0 / 100% no-repeat;
+}
+
+/* .slider .slick-arrow.slick-prev:hover, */
+/* .slider .slick-arrow.slick-prev:focus {
+  color: green;
+}
+
+.slick-prev:focus {
+  color: green;
+} */
+
+
+.slider .slick-arrow.slick-next {
+  right: 10px;
+  background: url('../images/hero/arrowright.png') 0 0 / 100% no-repeat;
+}
+
+.slider .slick-arrow.slick-disabled {
+  opacity: 0.2;
+}
+
+/*Скрытие слайдера до 768px*/
+@media only screen and (max-width: 768px) {
+  div.slider {
+    display: none;
+  }
+}
+
+/**
+  |============================
+  | HERO
+  |============================
+*/
+
 /* ==================== /COMPONENTS ==================== */
 
 /* ==================== Offerings ==================== */
@@ -271,6 +603,12 @@ img {
 .offerings-right {
   padding-top: 260px;
   margin-left: 157px;
+}
+
+.offerings-btn:hover,
+.offerings-btn:focus {
+   background-color: var(--button-green-color);
+   border: 2px solid var(--button-green-color);;
 }
 
 .subtitle-item::before {
@@ -596,17 +934,6 @@ border-radius: 50%;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ============ Subscribe ============ */
 @media screen and (min-width: 320px) {
 div.container.subscribe {
@@ -740,6 +1067,132 @@ h2.title.subscribe {
    border: none;
    border-radius: 30px;
    cursor: pointer;
+/* ============ Modal hero ==========*/
+
+.backdrop {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: inherit;
+
+   width: 100%;
+   height: 720px;
+   background-color: rgba(94, 99, 99, 0.7);
+   transition-property: opacity, visibility;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-hero {
+   transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
+.modal-hero {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 458px;
+   transform: translate(-50%, -50%);
+   padding: 32px;
+
+   background-color: #ffe550;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+   border-radius: 30px;
+
+   transform: translateX(-50%) translateY(-50%) scale(1);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-hero-close-button {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #ffffff;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+   transition: transform 0.25s, box-shadow;
+
+   /* Нижче код для обнуляції */
+   line-height: inherit;
+   cursor: pointer;
+   border: 0;
+}
+
+.modal-hero-close-button:hover {
+   transform: rotate(270deg);
+   box-shadow: none;
+}
+
+.modal-hero p {
+   text-align: center;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 120%;
+   color: #2c2c2c;
+   padding-bottom: 20px;
+
+   /* Нижче код для обнуляції */
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.modal-hero-form {
+   display: flex;
+   flex-direction: column;
+}
+
+.modal-hero-form-desc {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 140%;
+   color: #2c2c2c;
+   margin-left: 12px;
+   margin-bottom: 4px;
+}
+
+.modal-hero-form-input {
+   height: 48px;
+   background-color: #ffffff;
+   border: 1px solid rgba(18, 18, 18, 0.12);
+   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 30px;
+   padding-left: 12px;
+   margin-bottom: 24px;
+   outline: none;
+   font-size: 16px;
+   line-height: 1.25;
+}
+
+.modal-hero-form-input::placeholder {
+   font-size: 16px;
+   line-height: 20px;
+   color: #c4c4c4;
+}
+
+.modal-hero-form-input:focus {
+   border: 1px solid #7eb101;
+}
+
+.modal-hero-form-submit {
+   align-self: center;
+   margin-top: 32px;
+   width: 106px;
+   height: 40px;
+   background: #ffffff;
+   border: 2px solid #7eb101;
+   border-radius: 30px;
 
    font-weight: 500;
    font-size: 13px;
@@ -795,3 +1248,22 @@ input::placeholder {
 
 
 
+   color: #2c2c2c;
+
+   transition-property: color, background-color, border-color;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+   /* Для обнуляції */
+   cursor: pointer;
+}
+
+.modal-hero-form-submit:hover,
+.modal-hero-form-submit:checked {
+   background-color: #bbf330;
+}
+
+.modal-hero-form-input#email {
+   margin-bottom: 0;
+}
+/* ============ Modal hero ==========*/
