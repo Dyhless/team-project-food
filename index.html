@@ -48,18 +48,29 @@
               <li><a class="link-nav" href="#">Contact</a></li>
             </ul>
           </nav>
+          
           <button class="button btn-header" type="button">Order Now</button>
         </div>
-        <!-- Mobile menu-burger -->
-        <button class="mobile-menu js-open-menu" type="button">
-          <svg id="icon-gg_menu" width="28" height="28" viewBox="0 0 32 32">
-            <path
-              fill="#7eb101"
-              style="fill: var(--color1, #7eb101)"
-              d="M2.666 8c0-0.737 0.597-1.334 1.334-1.334v0h24c0.737 0 1.334 0.597 1.334 1.334s-0.597 1.334-1.334 1.334h-24c-0.737 0-1.334-0.597-1.334-1.334v0zM2.666 16.042c0.001-0.736 0.598-1.333 1.334-1.333 0 0 0 0 0 0h24c0.012-0 0.025-0.001 0.039-0.001 0.737 0 1.334 0.597 1.334 1.334s-0.597 1.334-1.334 1.334c-0.014 0-0.027-0-0.041-0.001l0.002 0h-24c-0.737 0-1.334-0.597-1.334-1.334v0zM4 22.752c-0.72 0.022-1.295 0.61-1.295 1.333s0.575 1.311 1.293 1.333l0.002 0h24c0.012 0 0.025 0.001 0.039 0.001 0.737 0 1.334-0.597 1.334-1.334s-0.597-1.334-1.334-1.334c-0.014 0-0.027 0-0.041 0.001l0.002-0h-24z"
-            ></path>
-          </svg>
-        </button>
+        <!-- Mobile menu-burger --> 
+          <button class="btn-menu js-open-menu" type="button">
+            <svg id="icon-gg_menu" width="28" height="28" viewBox="0 0 32 32">
+              <path
+                fill="#7eb101"
+                style="fill: var(--color1, #7eb101)"
+                d="M2.666 8c0-0.737 0.597-1.334 1.334-1.334v0h24c0.737 0 1.334 0.597 1.334 1.334s-0.597 1.334-1.334 1.334h-24c-0.737 0-1.334-0.597-1.334-1.334v0zM2.666 16.042c0.001-0.736 0.598-1.333 1.334-1.333 0 0 0 0 0 0h24c0.012-0 0.025-0.001 0.039-0.001 0.737 0 1.334 0.597 1.334 1.334s-0.597 1.334-1.334 1.334c-0.014 0-0.027-0-0.041-0.001l0.002 0h-24c-0.737 0-1.334-0.597-1.334-1.334v0zM4 22.752c-0.72 0.022-1.295 0.61-1.295 1.333s0.575 1.311 1.293 1.333l0.002 0h24c0.012 0 0.025 0.001 0.039 0.001 0.737 0 1.334-0.597 1.334-1.334s-0.597-1.334-1.334-1.334c-0.014 0-0.027 0-0.041 0.001l0.002-0h-24z"
+              ></path>
+            </svg>
+          </button>
+          <div class="hidden-mobile-menu js-menu-container">  
+            <button class="close-menu-btn js-close-menu"><svg class="close-menu-icon" width="24" height="24"><use href="./images/symbol-defs.svg#icon-close-btn"></use></svg></button>     
+              <ul class="mobile-menu-nav">
+                <li class="hidden-menu-link"><a class="mobile-menu-link" href="#">Home</a></li>
+                <li class="hidden-menu-link"><a class="mobile-menu-link" href="#About">About</a></li>
+                <li class="hidden-menu-link"><a class="mobile-menu-link" href="#Service">Service</a></li>
+                <li class="hidden-menu-link"><a class="mobile-menu-link" href="#Menu">Menu</a></li>
+                <li class="hidden-menu-link"><a class="mobile-menu-link" href="#">Contact</a></li>
+              </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -126,13 +137,17 @@
 
       <!-- ========== Offerings / Sergii =========-->
       <section class="offerings-section container">
-        <img
-          class="offerings-img"
-          src="./images/aple.png"
-          alt="Apple"
-          width="396"
-          height="502"
-        />
+        <div class="offerings-picture">
+          <div class="apple-image">
+            <img
+              class="offerings-img img"
+              src="./images/aple.png"
+              alt="Apple"
+              width="396"
+              height="502"
+            />
+          </div>
+      </div>
         <div class="offerings-right">
           <h2 class="offerings-title">What’s Special About Our Offerings</h2>
           <p class="offerings-text">
@@ -160,6 +175,7 @@
           <button class="offerings-btn" data-modal-open type="button">
             Order Now
           </button>
+          <button class="read-more" type="button">Read More</button>
         </div>
       </section>
 
@@ -345,4 +361,5 @@
     <script src="./js/slider.js"></script>
   </body>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </html>
