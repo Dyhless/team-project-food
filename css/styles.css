@@ -110,11 +110,6 @@ img {
 }
 
 
-/* не правильне значення!*/
-/* .container {
-  width: 1248px;
-} */
-
 .container {
    width: 1280px;
 }
@@ -199,6 +194,7 @@ img {
    display: flex;
    align-items: center;
 }
+
 
 /**
   |============================
