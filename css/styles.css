@@ -644,7 +644,44 @@ screen and (min-resolution: 2dppx) {
 .section.favorites{
    text-align: center;
    padding: 100px 0;
+   
 }
+
+.favorites {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+@media screen and (max-width: 480px) {
+   .container {
+      max-width: 320px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      outline: none;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+      max-width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .container {
+      max-width: 1280px;
+      padding-left: 16px;
+      padding-right: 16px;
+   }
+}
+
+
 
 .secondary.button{
    display: block;
@@ -662,6 +699,7 @@ screen and (min-resolution: 2dppx) {
    border-radius: 30px;
 }
 
+
 .secondary.button:hover,
 .secondary.button:focus{
    border-color: transparent;
@@ -673,8 +711,34 @@ screen and (min-resolution: 2dppx) {
 
 }
 
+@media screen and (max-width: 480px) {
+   .title.favorites {
+      font-size: 28px;
+      line-height: 1.2;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .title.favorites {
+      font-size: 28px;
+      line-height: 1.2;
+   }
+}
+
 .fav-text{
  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+   .fav-text {
+      font-size: 14px;
+   }
+}
+
+@media screen and (max-width: 1279px) {
+   .fav-text {
+      margin-bottom: 60px;
+   }
 }
 
 .fav.list{
@@ -692,6 +756,49 @@ screen and (min-resolution: 2dppx) {
     cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+.fav.list {
+   display: block;
+   margin-top: 60px;
+   margin-left: 0;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+   .fav.list {
+      max-width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
+@media screen and (max-width:768px) {
+   .fav-item {
+      height: 282px;
+      width: 280px;
+      padding: 17px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .fav-item:nth-child(n+4) {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+   .fav-item {
+      width: calc(100% / 2 - 32px);
+      height: 338px;
+      /* width: 336px; */
+      padding: 20px;
+   }
+}
+
 .border-fav{
    display: flex;
    align-items: center;
@@ -699,6 +806,19 @@ screen and (min-resolution: 2dppx) {
 
    border: 16px solid var(--yellow-main-color);
 border-radius: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+   .border-fav {
+      border: 11px solid var(--yellow-main-color);
+   }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1280px) {
+   .border-fav {
+      border: 14px solid var(--yellow-main-color);
+   }
 }
 
 .border-fav:active{
