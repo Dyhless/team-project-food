@@ -170,7 +170,6 @@ img {
 padding: 10px 0px;
 }
 
-
 .link-nav {
    text-decoration: none;
    font-family: inherit;
@@ -198,7 +197,7 @@ padding: 10px 0px;
    background-color: var(--yellow-main-color);
 }
 
- /* ==================== Header section / Finish ==================== */
+/* ==================== Header section / Finish ==================== */
 
 /* ==================== Mobile menu-burger / Start ==================== */
 
@@ -250,14 +249,17 @@ padding: 10px 0px;
 /* ==================== Hero / Start ==================== */
 
 /*480px*/
-.container {
-  width: 100vw;
-  min-width: 320px;
-  max-width: 480px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-right: auto;
-  margin-left: auto;
+
+@media screen and (max-width: 480px) {
+   .container {
+      width: 100vw;
+      min-width: 320px;
+      max-width: 480px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-right: auto;
+      margin-left: auto;
+   }
 }
 
 /*768px*/
@@ -667,8 +669,6 @@ screen and (min-resolution: 2dppx) {
    }
 }
 
-
-
 .secondary.button{
    display: block;
    margin-left: auto;
@@ -1038,7 +1038,7 @@ screen and (min-resolution: 2dppx) {
 }
 /* ============ Customer Say / Finish ==========*/
 
-/* ============ Subscribe ============ */
+/* ============ Subscribe / Start ============ */
 @media screen and (min-width: 320px) {
 div.container.subscribe {
    max-width: 320px;
@@ -1172,6 +1172,36 @@ h2.title.subscribe {
    border-radius: 30px;
    cursor: pointer;
 }
+
+/* Placeholder subscribe */
+input::placeholder {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 150%;
+   color: #505050;
+}
+
+/* Banana Picture */
+.banan-pic {
+   max-width: auto;
+   max-height: 78px;
+}
+}
+
+@media screen and (min-width: 768px) {
+   .banan-pic {
+      max-width: auto;
+      max-height: 136px;
+   }
+}
+
+@media screen and (min-width: 1280px) {
+   .banan-pic {
+      max-width: auto;
+      max-height: 266px;
+   }
+}
+
 /* ============ Modal hero ==========*/
 
 .backdrop {
@@ -1303,33 +1333,6 @@ h2.title.subscribe {
    color: var(--primary-text-color);
 }
 
-/* Placeholder subscribe */
-input::placeholder {
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 150%;
-   color: #505050;
-}
-
-/* Banana Picture */
-.banan-pic {
-   max-width: auto;
-   max-height: 78px;
-}}
-
-@media screen and (min-width: 768px) {
-   .banan-pic {
-      max-width: auto;
-      max-height: 136px;
-}}
-
-@media screen and (min-width: 1280px) {
-   .banan-pic {
-      max-width: auto;
-      max-height: 266px;
-   }
-}
-
 .modal-hero-form-submit:hover,
 .modal-hero-form-submit:checked {
    background-color: var(--button-green-color);
@@ -1338,4 +1341,6 @@ input::placeholder {
 .modal-hero-form-input#email {
    margin-bottom: 0;
 }
-/* ============ Modal Hero Finish ==========*/
+
+/* ============ Modal Hero / Finish ==========*/
+
