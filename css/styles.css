@@ -932,6 +932,141 @@ border-radius: 50%;
 }
 /* ============ Customer Say ==========*/
 
+
+
+/* ============ Subscribe ============ */
+@media screen and (min-width: 320px) {
+div.container.subscribe {
+   max-width: 320px;
+   height: 375px;
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+
+   position: relative;
+   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+div.container.subscribe {
+   max-width: 480px;
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+
+   position: relative;
+   margin-bottom: 100px;
+}}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+div.container.subscribe {
+   max-width: 768px;
+   margin: 0 auto;
+   padding-left: 32px;
+   padding-right: 32px;
+   
+   position: relative;
+}}
+
+@media screen and (min-width: 1280px) {
+   div.container.subscribe {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-left: 17px;
+      padding-right: 17px;
+
+      position: relative;
+}}
+
+/* Inside container Absolut position */
+.subscribe-inside-wrapper {
+   display: flex;
+   flex-direction: column-reverse;
+   gap: 17px;
+   align-items: center;
+   padding-left: 16px;
+   padding-right: 16px;
+   
+   position: absolute;
+   left: 0;
+   top: -46px;
+}
+
+@media screen and (min-width: 768px) {
+   .subscribe-inside-wrapper {
+      align-items: flex-end;
+      gap: 20px;
+ }}
+
+@media screen and (min-width: 1280px) {
+   .subscribe-inside-wrapper {
+      flex-direction: row;
+}
+
+/* Info Flex */
+.subscribe-info {
+   display: flex;
+   flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+   .subscribe-info {
+      max-width: 672px;
+   }
+}
+
+/* Title Subscribe section */
+h2.title.subscribe {
+   margin-bottom: 20px;
+}
+
+/* Text subscribe section */
+.text-subscribe {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   margin-bottom: 40px;
+}
+
+/* Form field */
+.subscribe-form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: flex-end;
+} 
+
+@media screen and (min-width: 768px) {
+   .subscribe-form {
+      flex-direction: row;
+      gap: 24px;
+      justify-content: start;
+   } 
+}
+
+/* Field input subscribe date */
+.subscribe-input {
+   border: 1px solid var(--yellow-main-color);
+   width: 100%;
+   height: 42px;
+   border-radius: 30px;
+   outline: none;
+   padding-left: 11px;
+}
+
+@media screen and (min-width: 768px) {
+   .subscribe-input {
+      width: 394px;
+}}
+
+/* Button submit/subscribe */
+.subscribe-btn {
+   width: 103px;
+   height: 42px;
+   background-color: var(--button-green-color);
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
 /* ============ Modal hero ==========*/
 
 .backdrop {
@@ -1062,6 +1197,57 @@ border-radius: 50%;
    font-weight: 500;
    font-size: 13px;
    line-height: 150%;
+   color: var(--primary-text-color);
+}
+
+/* Placeholder subscribe */
+input::placeholder {
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 150%;
+   color: #505050;
+}
+
+/* Banana Picture */
+.banan-pic {
+   max-width: auto;
+   max-height: 78px;
+}}
+
+@media screen and (min-width: 768px) {
+   .banan-pic {
+      max-width: auto;
+      max-height: 136px;
+}}
+
+@media screen and (min-width: 1280px) {
+   .banan-pic {
+      max-width: auto;
+      max-height: 266px;
+   }
+}
+
+
+
+/* ============ Subscribe ============ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    color: #2c2c2c;
 
    transition-property: color, background-color, border-color;
