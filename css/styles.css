@@ -372,7 +372,7 @@ img {
 .primary-btn:hover,
 .primary-btn:focus,
 .primary-btn:active {
-  background-color: var(--button-green-color-hov);
+  background-color: var(--yellow-main-color);
 }
 
 /*480px*/
@@ -607,6 +607,12 @@ screen and (min-resolution: 2dppx) {
 .offerings-right {
   padding-top: 260px;
   margin-left: 157px;
+}
+
+.offerings-btn:hover,
+.offerings-btn:focus {
+   background-color: var(--button-green-color);
+   border: 2px solid var(--button-green-color);;
 }
 
 .subtitle-item::before {
@@ -946,6 +952,16 @@ border-radius: 50%;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.backdrop.is-hidden {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal-hero {
+   transform: translateX(-50%) translateY(-50%) scale(0.9);
+}
+
 .modal-hero {
    position: absolute;
    top: 50%;
@@ -957,6 +973,9 @@ border-radius: 50%;
    background-color: #ffe550;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
    border-radius: 30px;
+
+   transform: translateX(-50%) translateY(-50%) scale(1);
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-hero-close-button {
