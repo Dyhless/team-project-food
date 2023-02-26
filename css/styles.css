@@ -201,7 +201,7 @@ padding: 10px 0px;
 
 /* ==================== Mobile menu-burger / Start ==================== */
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 479px) {
    .mobile-menu {
       display: none;
 }
