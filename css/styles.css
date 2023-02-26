@@ -202,8 +202,15 @@ padding: 10px 0px;
 /* ==================== Mobile menu-burger / Start ==================== */
 
 @media screen and (min-width: 479px) {
+   .icon-gg_menu {
+      display: none;
+   }
    .mobile-menu {
       display: none;
+   }
+   .action-nav {
+      display: none;
+   }
 }
 
 .mobile-menu {
@@ -219,12 +226,6 @@ padding: 10px 0px;
   background-color: transparent;
   outline: none;
   cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-   .action-nav {
-      display: none;
-   }
 }
 
 @media screen and (min-width: 768px) {
