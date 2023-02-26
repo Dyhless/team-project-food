@@ -1330,37 +1330,6 @@ input::placeholder {
    }
 }
 
-
-
-/* ============ Subscribe ============ */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   color: #2c2c2c;
-
-   transition-property: color, background-color, border-color;
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-   /* Для обнуляції */
-   cursor: pointer;
-}
-
 .modal-hero-form-submit:hover,
 .modal-hero-form-submit:checked {
    background-color: var(--button-green-color);
